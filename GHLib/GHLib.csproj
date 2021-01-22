@@ -57,6 +57,16 @@
     <Compile Include="Utils\MemoryTools.cs" />
     <Compile Include="Utils\PointerTools.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\lib\MemoryLib\MemoryLib\MemoryLib.csproj">
+      <Project>{2c4d35dd-4715-4a66-9d2c-9feac0ce3f4a}</Project>
+      <Name>MemoryLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\lib\ProcessLib\ProcessLib\ProcessLib.csproj">
+      <Project>{8579e524-8611-43de-a7c4-5d7d5f7e0308}</Project>
+      <Name>ProcessLib</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>if $(ConfigurationName) == Release "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\PreEmptiveSolutions\DotfuscatorCE\dotfuscatorCLI.exe" /q /p="SourceDirectory=$(TargetDir),SourceFile=$(TargetFileName)" "$(ProjectDir)Dotfuscator.xml"</PostBuildEvent>

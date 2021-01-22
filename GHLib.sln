@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GHLib", "GHLib\GHLib.csproj", "{DF9D041F-0974-4A6F-BC30-274E0F915D89}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MemoryLib", "lib\MemoryLib\MemoryLib\MemoryLib.csproj", "{2C4D35DD-4715-4A66-9D2C-9FEAC0CE3F4A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProcessLib", "lib\ProcessLib\ProcessLib\ProcessLib.csproj", "{8579E524-8611-43DE-A7C4-5D7D5F7E0308}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{DF9D041F-0974-4A6F-BC30-274E0F915D89}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DF9D041F-0974-4A6F-BC30-274E0F915D89}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DF9D041F-0974-4A6F-BC30-274E0F915D89}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C4D35DD-4715-4A66-9D2C-9FEAC0CE3F4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C4D35DD-4715-4A66-9D2C-9FEAC0CE3F4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C4D35DD-4715-4A66-9D2C-9FEAC0CE3F4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C4D35DD-4715-4A66-9D2C-9FEAC0CE3F4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8579E524-8611-43DE-A7C4-5D7D5F7E0308}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8579E524-8611-43DE-A7C4-5D7D5F7E0308}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8579E524-8611-43DE-A7C4-5D7D5F7E0308}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8579E524-8611-43DE-A7C4-5D7D5F7E0308}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
