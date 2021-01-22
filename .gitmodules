@@ -1,0 +1,6 @@
+[submodule "lib/MemoryLib"]
+	path = lib/MemoryLib
+	url = git://github.com/Geordan9/MemoryLib.git
+[submodule "lib/ProcessLib"]
+	path = lib/ProcessLib
+	url = git://github.com/Geordan9/ProcessLib.git
