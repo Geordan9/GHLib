@@ -71,6 +71,16 @@
   <ItemGroup>
     <None Include="GeoDotNetKey.pfx" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\MemoryLib\MemoryLib\MemoryLib.csproj">
+      <Project>{2c4d35dd-4715-4a66-9d2c-9feac0ce3f4a}</Project>
+      <Name>MemoryLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ProcessLib\ProcessLib\ProcessLib.csproj">
+      <Project>{8579e524-8611-43de-a7c4-5d7d5f7e0308}</Project>
+      <Name>ProcessLib</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>
