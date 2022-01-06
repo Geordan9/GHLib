@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DF9D041F-0974-4A6F-BC30-274E0F915D89}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GHLib</RootNamespace>
+    <AssemblyName>GHLib</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <LangVersion>preview</LangVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>GeoDotNetKey.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\Enums\RandomType.cs" />
+    <Compile Include="Common\Enums\MemValueModifier.cs" />
+    <Compile Include="Common\Enums\MemValueType.cs" />
+    <Compile Include="Common\Enums\AoBPointerType.cs" />
+    <Compile Include="Core\Hack\HackScanner.cs" />
+    <Compile Include="Core\Hack\HackCatagory.cs" />
+    <Compile Include="Core\Hack\HackGroup.cs" />
+    <Compile Include="Core\Hack\HackMemory.cs" />
+    <Compile Include="Core\Hack\HackValue.cs" />
+    <Compile Include="Core\Hack\HackOptions.cs" />
+    <Compile Include="Core\AoB\AoBScript.cs" />
+    <Compile Include="Core\AoB\AoBPointer.cs" />
+    <Compile Include="Core\AoB\AoBReplacement.cs" />
+    <Compile Include="Core\Hack\Hack.cs" />
+    <Compile Include="Core\Hack\HackOffset.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Util\AoBTools.cs" />
+    <Compile Include="Util\Extensions\StreamExtension.cs" />
+    <Compile Include="Util\Extensions\StringExtension.cs" />
+    <Compile Include="Util\GHBinaryTools.cs" />
+    <Compile Include="Util\HackTools.cs" />
+    <Compile Include="Util\MemoryTools.cs" />
+    <Compile Include="Util\PointerTools.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="GeoDotNetKey.pfx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>
